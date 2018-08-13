@@ -1,0 +1,176 @@
+@-moz-document domain("wiki.archlinux.org") {
+html, body {
+    background-color:#222;
+    color:white;
+}
+
+a,
+#content a:not(.new), #mw-navigation li:not(.new) a:not(.new), #mw-panel li:not(.new) a:not(.new), #column-one li:not(.new) a:not(.new), #footer a:not(.new){
+    color:#7CF !important;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#AEF !important;
+}
+
+h1, h2, h3, h4, h5 {
+    color:white !important;
+    font-family:sans-serif !important;
+    font-weight:bold;
+    border:none;
+}
+
+h1, div.archwiki-template-meta-related-articles-start > p {
+    border-bottom:2px solid #08C;
+}
+
+#toc, .toc, .mw-warning, .toccolours, .catlinks, .editOptions, .mw-editform #wpTextbox1 {
+    background-color:#222;
+    color:white;
+    border:none;
+}
+.mw-editform #wpTextbox1 {
+    border-bottom:4px solid #333;
+}
+.tocnumber {
+    color:#EEE;
+}
+#content, 
+div#footer ul li, div.vectorMenu h3 span, div#simpleSearch #searchInput,
+#content table, #content h1, #content h2, #content h3, #content h4, #content h5, #content pre, #content code, #content tt {
+    color:#DDD;
+}
+#content {
+    background-color:#333;
+    border:none;
+    margin-top:-4px;
+}
+
+div.vectorTabs, div.vectorTabs ul, div.vectorTabs ul li {
+    background:initial !important;
+    background-color:initial;
+    background-image:none;
+    border:none !important;
+    border-left-color:initial;
+}
+
+div.vectorTabs ul li a, div.vectorMenu h3 span {
+    padding-top:0.75em;
+}
+
+div#simpleSearch {
+    margin-top:0;
+}
+
+#ca-watch.icon a {
+    padding-top:2.75em;  
+}
+
+div.vectorTabs li span, div#mw-head div.vectorMenu h3, div#simpleSearch {
+    background-image:none;
+    background:none;
+}
+
+div#simpleSearch {
+    background-color:#333;
+    border:none;
+}
+
+
+div.vectorTabs li.selected {
+    background-color:#333 !important;
+    border:none;
+}
+
+div.archwiki-template-box, 
+div.archwiki-template-message {
+    background-color:#555;
+    border-radius:4px;
+    border:1px solid #AAA;
+}
+div.archwiki-template-box.archwiki-template-box-note, 
+div.archwiki-template-box.archwiki-template-box-tip {
+    background-color:#444F55;
+    border-radius:4px;
+    border:1px solid #079;
+}
+   
+
+div.archwiki-template-box.archwiki-template-box-warning {
+    background-color:#554;
+    border-radius:4px;
+    border:1px solid #990;
+}
+
+#content pre, #content code, #content tt {
+    background-color:#222;
+    color:white;
+    border:none;
+    border-color:#555;
+}
+
+div.archwiki-template-meta-related-articles-start {
+    padding:0.4em 1em;
+    max-width:20em;
+}
+div.archwiki-template-meta-related-articles-start, div.archwiki-template-meta-related-articles-start p {
+    background-color:#222;
+}
+#pagehistory {
+    list-style-type:none;
+    margin-left:0;
+}
+#pagehistory li {
+    border:none;
+    padding: 0.5em;
+    margin:0;
+}
+#pagehistory li:nth-child(2n) {
+    background-color:#222;
+}
+#pagehistory li:nth-child(2n+1) {
+    background-color:#2A2A2A;
+}
+
+#pagehistory li.selected {
+    background-color:#345;
+}
+
+.mw-plusminus-pos {
+    color:#6A6;
+}
+.mw-plusminus-neg {
+    color:#A66;
+}
+
+fieldset {
+    border-color:#444;
+    background-color:#222;
+    padding:0.5em 1em;
+}
+fieldset legend {
+    color:#888;
+    background-color:#222;
+    border-radius:0.5em;
+    line-height:0.8em;
+    padding:0.2em 1em;
+    border:1px solid #444;
+}
+
+#mw-history-search input, #mw-history-search select {
+    background-color:#333;
+    border:1px solid #444;
+    padding:0.2em 0.5em;
+    color:white;
+}
+#content table { 
+    background-color:#2A2A2A;
+}
+table.wikitable > tr > th, table.wikitable > * > tr > th {
+    background-color:#222;
+}
+table.wikitable > tr > th, table.wikitable > tr > td, table.wikitable > * > tr > th, table.wikitable > * > tr > td {
+    border-color:#555;
+}
+}

@@ -1,0 +1,455 @@
+@-moz-document domain("reddit.com") {
+body {
+    background-color: #141414;
+    color: #CCC;
+    font: Helvetica sans-serif;
+}
+a,
+.md a,
+.morecomments a {
+    color: orangered;
+}
+input,
+textarea,
+select {
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #111;
+    color: white;
+}
+.usertext-edit,
+.usertext-edit .md,
+.usertext-edit textarea {
+    width: 100%;
+    max-width: initial;
+}
+/*
+	* Header Styles
+	*/
+#header {
+    background-color: #222;
+    color: inherit;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 20px 0 #111;
+    text-align:center;
+}
+#header > * {
+    background-color: inherit;
+    color: inherit;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+#sr-header-area {
+    display: none;
+}
+#header-bottom-left, #header-bottom-right {
+    padding: 20px 0;
+    margin: 0;
+    width:600px;
+    max-width:47.5%;
+    display:inline-block;
+    position:initial; 
+    line-height:15px;
+}
+#header-bottom-left {
+    text-align:left;
+}
+#header-img,
+#header-img.default-header {
+    background: none;
+    background-position: initial;
+    height: initial;
+    width: initial;
+    color: #AAA;
+    text-indent: initial;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 10px 0 0;
+}
+#header-bottom-left .choice {
+    background: none;
+    border: none;
+    color: #CCC;
+}
+#header-bottom-right {
+    text-align:right;
+}
+#header-bottom-left .selected .choice {
+    color: orangered;
+}
+/*
+	* Sidebar Styles
+	*/
+.side {
+    background-color: #222;
+    box-shadow: 0 0 20px 0 #111;
+    padding: 30px;
+    margin: 10px;
+    margin-right: 15px;
+    width: 300px;
+    height: 90%;
+    overflow: hidden;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    border: 1px solid black;
+}
+.side,
+.side > * {
+    transition: border-radius 0.3s, height 0.3s ease-in-out, width 0.3s ease-in-out 0.3s, opacity 0.6s ease-in-out;
+}
+.side > * {
+    width: 300px;
+}
+.side:not(:hover) {
+    min-height: initial;
+    min-width: initial;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.side:not(:hover) > * {
+    /*width:0;*/
+    /*height:0;*/
+    opacity: 0;
+}
+/*.side .titlebox {
+	* height:400px;
+	* overflow-y:scroll;
+	* background-color:#111;
+	* padding:4px;
+	}*/
+.side .usertext-body::before {
+    content: "SUBREDDIT INFO";
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #222;
+    color: gray;
+}
+.side .usertext-body {
+    overflow-y: hidden;
+    height: 30px;
+    background-color: #111 !important;
+    transition: all 0.5s ease;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.side .usertext-body:hover {
+    overflow-y: scroll;
+    height: 30vh;
+}
+.sidecontentbox {
+    overflow: hidden;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    background-color: #111;
+}
+.sidecontentbox:hover {
+    height: 30vh;
+    overflow-y: scroll;
+}
+.sidecontentbox .title {
+    margin: 10px 5px;
+}
+.sidecontentbox .helplink {
+    float: none !important;
+    display: none;
+}
+.sidecontentbox .content {
+    border: none;
+}
+.titlebox .bottom {
+    border-top: 1px solid #CCC;
+}
+.morelink {
+    background: none;
+    border: none;
+    background-image: none;
+}
+.morelink:hover,
+.mlh,
+.linkinfo {
+    background: none;
+    border: none;
+    background-image: none;
+}
+.morelink a {
+    color: orangered;
+    font-weight: normal;
+    font-size: 12pt;
+    background-color: #444;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.morelink a:hover {
+    background-color: #666;
+}
+.morelink .nub,
+.sidebox.create .spacer,
+.goldvertisement {
+    display: none;
+}
+.trending-subreddits-content {
+    visibility: hidden;
+    height: 0;
+}
+/*
+	* List styles
+	*/
+#siteTable .clearleft,
+.thing .rank {
+    display: none;
+}
+
+.content .reddit-infobar {
+    background:none;
+    border:none;
+    padding:0;
+    text-align:center;
+}
+.content .reddit-infobar > .md {
+    background-color:#222 !important;
+    border:1px solid black !important;
+    /*box-shadow:0 0 20px 0 #111;*/
+    min-width:300px;
+    display:inline-block;
+    text-align:left;
+    padding:10px;
+    border-radius:4px;
+    
+}
+.content .reddit-infobar::before {
+    display:none;
+}
+
+.content .reddit-infobar > .md > p::before, .commentarea > .infobar::before {
+    content:"!";
+    color:orangered;
+    margin:0 20px;
+    font-size:16px;
+    height:20px;
+    width:20px;
+    border-radius:10px;
+    border:1px solid orangered;
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#siteTable .thing,
+.wiki-page-content > *:not(script):not(hr):not(p){
+    background-color: #222;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 20px 0 #111;
+    /*display:inline-block;*/
+    /*width:30vw;*/
+    min-width: 300px;
+    vertical-align: top;
+    min-height: 100px;
+}
+.sitetable .comment {
+    background-color: #222;
+    border: none;
+    box-shadow: none;
+}
+#siteTable .thing > .entry {
+    display: table-cell;
+}
+#siteTable .thing > *:not(.entry):not(.rank) {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 8px;
+}
+#siteTable .thing > *:not(.entry):not(.rank) > * {
+    vertical-align: middle;
+}
+#sitetable .thing .rank {
+    display: none;
+}
+#siteTable .thing .title,
+.titlebox h1 a,
+.pagename a {
+    color: white;
+}
+#siteTable .thing .title {
+    font-size: 15pt;
+}
+#siteTable .thing .title:hover,
+.titlebox h1 a:hover,
+.pagename a:hover {
+    color: orangered;
+    text-decoration: none;
+}
+.content > *:not(script):not(style):first-of-type {
+    margin-top:80px;
+}
+.wiki-page .wikititle {
+    margin-top: 90px;
+}
+.pagename {
+    font-variant: initial;
+    text-transform: lowercase;
+}
+#siteTable .tagline a,
+.search-result-meta a {
+    color: orangered;
+}
+.listing-chooser.initialized {
+    display: none;
+}
+.md,
+.md-container {
+    color: #CCC !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+.tagline a,
+.tagline .submitter {
+    color: orangered;
+}
+.comment .child {
+    border-left: 4px solid #444;
+}
+.sitetable .thing {
+    /*border:1px solid black;*/
+    margin: 8px 0;
+    padding: 8px;
+}
+.comment .child,
+.comment .showreplies {
+    margin: 0;
+}
+.sitetable .child .thing {
+    /*margin-left:-8px;*/
+}
+.titlebox form.toggle,
+.leavemoderator {
+    background: none;
+}
+.md blockquote {
+    color: #CCC;
+    background-color: #111;
+}
+.panestack-title,
+.commentarea .menuarea {
+    margin: 0;
+}
+.commentarea,
+.sitetable.linklisting,
+.wiki-page-content {
+    text-align: center;
+    width: 100%;
+}
+.commentarea > *:not(script),
+.sitetable.linklisting > *:not(script),
+.wiki-page-content > *:not(script),
+.content .reddit-infobar > .md {
+    text-align: left;
+    width: 1200px;
+    display: inline-block;
+    max-width: 95% !important;
+}
+.commentarea > *:not(.menuarea):not(.panestack-title):not(script):not(.infobar) {
+    box-shadow: 0 0 20px 0 #111;
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #222;
+}
+.commentarea > .infobar {
+    margin:20px 0;
+    border:1px solid black;
+    border-radius:4px;
+    padding:16px 8px;
+    background-color:#222;
+}
+.commentarea > .infobar > * {
+    display:inline-block;
+    margin:0 10px;
+}
+.infobar {
+    background: none;
+    border: none;
+}
+.flair,
+.linkflairlabel {
+    background-color: #333;
+    border: 1px solid black;
+    color: white;
+    padding: 2px 6px;
+}
+.linkflairlabel {
+    font-size: 10pt;
+}
+.content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.wiki-page .wikititle,
+.wiki-page .pageactions {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 0;
+    border: none;
+    display: block;
+}
+.wiki-page .wikititle strong {
+    font-weight: normal;
+    font-size: 20pt;
+    color: white;
+}
+.wiki-page .pageactions .wikiaction-current {
+    background-color: orangered;
+    color: black;
+}
+.wiki-page-content .md h1,
+.wiki-page-content .md h2,
+.wiki-page-content .md h3,
+.wiki-page-content .md h4 {
+    color: white;
+}
+.hohoho-header {
+    display: none;
+}
+
+.thumbnail.self, .thumbnail.default, .thumbnail.image {
+    background-image:none;
+    padding-top:0 !important;
+}
+.thumbnail.self::before {
+    content:"\1f4ac";
+    
+}
+.thumbnail.default::before {
+    content:"\1f517";
+}
+.thumbnail.image::before {
+    content:"\1f5bc";
+}
+.thumbnail.self::before, .thumbnail.default::before, .thumbnail.image::before {
+    color:orangered;
+    font-size:46px;
+    vertical-align:top;
+    margin-top:-4px;
+}
+
+code, .md pre { 
+    background-color:black;
+}
+}

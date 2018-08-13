@@ -1,0 +1,137 @@
+@-moz-document domain("discordapp.com") {
+.theme-light .chat-3bRxxu,
+.theme-light .content-yTz4x3, .theme-light .noChannel-Z1DQK7 {
+    background:#e4e8ec;
+    background-color:#e4e8ec;
+}
+
+.theme-light .chat-3bRxxu {
+    color:#CCC;
+}
+
+.theme-light .chat-3bRxxu, 
+.theme-light .markup-2BOw-j,
+.theme-light .item-2J1YMK,
+.theme-light .reaction.reaction-me .reaction-count,
+.theme-light .nameUnreadText-DfkrI4, 
+.theme-light .nameUnreadVoice-EVo-wI {
+    color:black;
+}
+
+.theme-light .headerCozyMeta-rdohGq,
+.theme-light .timestampCozy-2hLAPV,
+.theme-light .reaction .reaction-count,
+.theme-light .header-2o-2hj,
+.theme-light .colorConnectedText-1c_uzY, 
+.theme-light .colorConnectedVoice-3kyvUN, 
+.theme-light .colorDefaultText-oas-QM, 
+.theme-light .colorDefaultVoice-3wYlhb, 
+.theme-light .colorHoveredText-OZnAgu, 
+.theme-light .colorHoveredVoice-1kucsK, 
+.theme-light .colorLockedText-1VRkPt, 
+.theme-light .colorLockedVoice-2UlBjl, 
+.theme-light .colorSelectedText-1y4Wvs, 
+.theme-light .colorSelectedVoice-Xcb_9R, 
+.theme-light .colorUnreadText-2t7XRb, 
+.theme-light .colorUnreadVoice-137o4S,
+.theme-light .container-2Thooq,
+.theme-light .item-1GzJrl,
+.theme-light .alt-3btY0e .helper-2c73HK,
+.theme-light .headerNormal-T_seeN .headerTag-2pZJzA
+{
+    color:#444;
+    opacity:1;
+}
+
+.theme-light .divider-3gKybi>div,
+.theme-light .divider-3gKybi>span,
+.theme-light .container-3cGP6G,
+.theme-light .reaction, 
+.theme-light .inner-zqa7da,
+.theme-light .members-1998pB,
+.theme-light .search .searchBar-2_Yu-C,
+.theme-light .embedInner-1-fpTo,
+.theme-light .container-2Thooq,
+.theme-light .container-PNkimc
+
+{
+    background-color:#c0c8d0;
+}
+
+.theme-light .dividerEnabled-2TTlcf,
+.theme-light .containerCozy-jafyvG .divider-32i8lo,
+.theme-light .separator-2zcjq8 {
+    border-bottom:1px solid #c0c8d0;
+    border-bottom-color:#c0c8d0;
+}
+
+.theme-light .divider-3gKybi>span,
+.theme-light .divider-3gKybi.dividerRed-MKoLlr>span {
+    color:#EEE;
+}
+
+.theme-light .divider-3gKybi>span,
+.theme-light .divider-3gKybi.dividerRed-MKoLlr>span {
+    padding:0 8pt;
+}
+
+.theme-light .divider-3gKybi.dividerRed-MKoLlr {
+    text-transform:initial;
+}
+
+.theme-light .divider-3gKybi>span {
+    font-size:8pt;
+}
+
+
+.theme-light .title-3qD0b-,
+.theme-light .reaction.reaction-me,
+.theme-light .divider-3gKybi:before,
+.theme-light .divider-3gKybi.dividerRed-MKoLlr>span,
+.theme-light .divider-3gKybi.dividerRed-MKoLlr>div,
+.theme-light .header-2o-2hj,
+.theme-light .container-2Thooq,
+.theme-light .menu-Sp6bN1,
+.theme-light .headerNormal-T_seeN {
+    background:#a0a8b0;
+    background-color:#a0a8b0;
+}
+
+.theme-light .channelTextArea-rNsIhG *::placeholder,
+.theme-light .membersGroup-v9BXpm,
+.theme-light .markup-2BOw-j a {
+    color:#889;
+}
+
+.theme-light .title-3qD0b-,
+.theme-light .container-2Thooq {
+    box-shadow:0 1px 0 #889, 0 -2px 0 transparent
+}
+
+.theme-light .newMessagesBar-mujexs,
+.theme-light .scroller-wrap .scroller::-webkit-scrollbar-thumb {
+    background-color:#303840;
+}
+
+
+.theme-light .guildsWrapper-5TJh6A,
+.theme-light .unread-1Dp-OI {
+    background-color:#202830;
+}
+
+
+
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    border-color:transparent;
+}
+
+
+.theme-light .channelIcon-MsmKOO {
+    color:inherit;
+}
+
+.theme-light .embedPill-1Zntps {
+    background-color:#202830 !important;
+}
+}
