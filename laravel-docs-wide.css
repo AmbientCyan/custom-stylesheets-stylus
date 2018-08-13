@@ -1,0 +1,37 @@
+@-moz-document url-prefix("https://laravel.com/docs/") {
+.docs-wrapper {
+    width:95% !important;
+    max-width:initial !important;
+}
+
+.sidebar {
+    width:0 !important;
+    border-right:3px solid #f4645f;
+    padding-left:0 !important;
+    padding-right:0 !important;
+    transition: width 0.2s ease-out, padding 0.2s ease-out;
+    overflow:hidden;
+    position:fixed;
+    display:block;
+    left:0;
+    top:0;
+    height:100%;
+    white-space:nowrap;
+    background-color:white !important;
+    z-index:999;
+}
+
+.sidebar:hover {
+    width:250px !important;
+    padding-left:35px !important;
+    padding-right:35px !important;
+}
+
+.sidebar:hover > ul {
+    /*position: fixed !important;*/
+}
+article {
+    margin-left:0 !important;
+    padding:0 4em !important;
+}
+}

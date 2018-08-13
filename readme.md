@@ -13,3 +13,7 @@ This is a dump of some custom CSS stylesheets I have made for a few sites for St
 ### ArchWiki Night
 
 **arch-wiki-night.css** - A darker theme for the arch linux wiki that tries to keep consistent with the style of the rest of the site.
+
+### Laravel Docs Width Fix
+
+**laravel-docs-wide.css** - A small fix to Laravel docs that force the content to take up the entire width of the page.
